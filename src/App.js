@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Manuscript.css';
 
 export default function App() {
-  const [text, setText] = useState(`In principio creavit Deus caelum et terram. terra autem erat inanis et vacua et tenebrae super faciem abyssi et spiritus Dei ferebatur super aquas. dixitque Deus fiat lux et facta est lux.`);
+  const [text, setText] = useState(`In principio creavit Deus caelum et terram. Terra autem erat inanis et vacua et tenebrae super faciem abyssi et spiritus Dei ferebatur super aquas. Dixitque Deus fiat lux et facta est lux.`);
 
 
   const getFormattedText = () => {
