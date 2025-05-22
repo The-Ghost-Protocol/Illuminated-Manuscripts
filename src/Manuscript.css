@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4eec7;
+  background-image: url('background.jpg');
+  background-size: cover;          /* Ensures the image fully covers the container */
+  background-repeat: no-repeat;    /* Prevents tiling */
+  background-position: center;     /* Centers the image */
+  font-family: 'MedievalSharp', cursive;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff8dc;
+  border-bottom: 4px double #a67c52;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.manuscript-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.input-box {
+  width: 45%;
+  min-height: 300px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 2px solid #a67c52;
+  background: #fffef0;
+  resize: vertical;
+}
+
+.output.parchment {
+  width: 45%;
+  background-image: url('parchment.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  border: 12px solid #a67c52;
+  font-size: 1.5rem;
+  color: #3b2f2f;
+  line-height: 1.8;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.illuminated-letter {
+  display: inline-block;
+  font-size: 3rem;
+  vertical-align: top;
+  margin-right: 0.4rem;
+  line-height: 0.75;
+  color: #b30000;
+  font-weight: bold;
+  font-family: 'MedievalSharp', cursive;
+  text-shadow: 2px 2px #fff4c2;
+}
+
+button {
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  background-color: #b30000;
+  color: #fff4c2;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8a0000;
+}
+
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 1rem;
+  background-color: #fff8dc;
+  border-top: 4px double #a67c52;
+  font-size: 0.9rem;
+  color: #6e4f2c;
+}
+
+@media print {
+  .input-box,
+  button,
+  .header,
+  .footer {
+    display: none;
+  }
+
+  .output {
+    border: none;
+    background: none;
+    color: black;
+  }
+}
